@@ -1,6 +1,6 @@
 from car.car import Car
-from car_thread import CarThread
-from image_analysis import ImageAnalysisService
+from service.car_thread import CarThread
+from service.image_analysis import ImageAnalysisService
 
 
 class CarService:

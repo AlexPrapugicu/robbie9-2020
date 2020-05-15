@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-
 from boundary.car_controller import CarController
 from car.car import Car
 from service.car_service import CarService
