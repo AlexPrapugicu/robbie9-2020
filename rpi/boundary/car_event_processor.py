@@ -15,6 +15,10 @@ MOVE_FORWARD_SENDER = 'move_forward_sender'
 
 class CarEventProcessor:
     def __init__(self):
+        dispatcher.connect(take_picture_dispatcher_recieve(), signal=TAKE_PICTURE_SIGNAL, sender=TAKE_PICTURE_SENDER)
+        dispatcher.connect(upload_image_dispatcher_recieve(), signal=UPLOAD_IMAGE_SIGNAL, sender=UPLOAD_IMAGE_SENDER)
+        dispatcher.connect(detect_traffic_light_dispatcher_recieve(), signal=DETECT_TRAFFIC_LIGHT_SIGNAL, sender=DETECT_TRAFFIC_LIGHT_SENDER)
+        dispatcher.connect(move_forward_dispatcher_recieve(), signal=MOVE_FORWARD_SIGNAL, sender=MOVE_FORWARD_SENDER)
 
 
 def take_picture_dispatcher_recieve(self):
